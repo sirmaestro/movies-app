@@ -33,6 +33,7 @@ class App extends React.Component<{}, IState> {
     this.handleAddMovie = this.handleAddMovie.bind(this)
     this.handleSelectSavedMovie = this.handleSelectSavedMovie.bind(this)
   }
+  
   public render() {
     return (
       <div className="App" style={{backgroundColor: "#fafafa"}}>
