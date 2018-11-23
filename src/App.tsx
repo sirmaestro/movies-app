@@ -35,11 +35,12 @@ class App extends React.Component<{}, IState> {
   }
   public render() {
     return (
-      <div className="App">
+      <div className="App" style={{backgroundColor: "#fafafa"}}>
         <AppBar position="static">
           <Toolbar>
-            <Typography variant="h6" color="inherit" style={{ flexGrow: 1 }}>
-              Movies App
+            <img src="/logo.png" alt="Watcholic Logo" width="100px" height="100px"/>
+            <Typography variant="h4" color="inherit" style={{ flexGrow: 1 }}>
+              Watcholic App
             </Typography>
             <IconButton color="inherit" onClick={this.onOpenModal}>
               <StarIcon />
@@ -53,7 +54,7 @@ class App extends React.Component<{}, IState> {
           </Grid>
         </div>
 
-        <Button variant="fab" color="primary" aria-label="Add" style={{ position: 'fixed', bottom: 50, right: 50, left: 'auto', top: 'auto' }} onClick={this.handleAddMovie}>
+        <Button variant="fab" color="secondary" aria-label="Add" style={{ position: 'fixed', bottom: 50, right: 50, left: 'auto', top: 'auto' }} onClick={this.handleAddMovie}>
           <AddIcon />
         </Button>
 
