@@ -93,6 +93,7 @@ class App extends React.Component<{}, IState> {
   // GET movies
   private fetchSavedMovies() {
     let url = "https://msa2018moviesapi.azurewebsites.net/api/movie"
+    
     fetch(url, {
       method: 'GET'
     })
@@ -109,7 +110,7 @@ class App extends React.Component<{}, IState> {
   // GET movies
   private fetchMovies(searchTerm: any) {
     let url = "https://www.omdbapi.com/?apikey=147a6c7c&type=movie&s=" + searchTerm.split(' ').join('+')
-    console.log(url)
+    
     fetch(url, {
       method: 'GET'
     })
